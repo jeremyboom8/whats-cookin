@@ -1,0 +1,11 @@
+.card-frame {
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  height: 100px;
+  width: 300px;
+  background-color: $yellow;
+  text-align: right;
+}
