@@ -8,6 +8,21 @@
 
 # delete including this <---
 
-Listing.create(title: "Knife", description: "cutting stuff", address: "Bredgatan", price: 50)
-Listing.create(title: "Fork", description: "forking stuff", address: "Tokyo", price: 70)
-Listing.create(title: "Spoon", description: "spooning stuff", address: "Yoyo", price: 20)
+# create user
+
+
+Listing.destroy_all
+User.destroy_all
+
+john = User.create(password: "123456", email: "john@gmail.com")
+
+knives = Listing.new(title: "Knives", description: "cutting stuff", address: "Bredgatan", price: 50)
+spoons = Listing.new(title: "Spoons", description: "cutting stuff", address: "Bredgatan", price: 50)
+
+knives.user = john
+spoons.user = john
+
+knives.save
+spoons.save
+
+

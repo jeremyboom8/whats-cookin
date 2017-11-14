@@ -1,9 +1,13 @@
 <h1>Listings#index</h1>
 <p>Find me in app/views/listings/index.html.erb</p>
 
+<%= link_to "Add new listing", new_listing_path %>
+
 <!-- Display all the listings -->
 <% @listings.each do |listing| %>
-  <h2><%= listing.title %></h2>
+  <%= link_to listing_path(id: listing.id) do %>
+    <h2><%= listing.title %></h2>
+  <% end %>
   <h3><%= listing.description %></h3>
   <p><%= listing.address %></p>
   <h4><%= listing.price %></h4>
