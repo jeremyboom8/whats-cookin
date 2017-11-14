@@ -1,0 +1,10 @@
+<h1>Listings#index</h1>
+<p>Find me in app/views/listings/index.html.erb</p>
+
+<!-- Display all the listings -->
+<% @listings.each do |listing| %>
+  <h2><%= listing.title %></h2>
+  <h3><%= listing.description %></h3>
+  <p><%= listing.address %></p>
+  <h4><%= listing.price %></h4>
+<% end %>

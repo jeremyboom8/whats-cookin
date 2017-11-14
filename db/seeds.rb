@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# delete including this <---
+
+Listing.create(title: "Knife", description: "cutting stuff", address: "Bredgatan", price: 50)
+Listing.create(title: "Fork", description: "forking stuff", address: "Tokyo", price: 70)
+Listing.create(title: "Spoon", description: "spooning stuff", address: "Yoyo", price: 20)
