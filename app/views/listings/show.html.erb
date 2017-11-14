@@ -6,6 +6,10 @@
 <p><%= @listing.address %></p>
 <h4><%= @listing.price %></h4>
 
+<% if @listing.photo? %>
+  <%= cl_image_tag @listing.photo.path, width: 200, height: 300, crop: :fill %>
+<% end %>
+
 <%= link_to "Book now", new_listing_booking_path(@listing) %>
 <p></p>
 <%= link_to "Edit listing", edit_listing_path %>
