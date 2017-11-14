@@ -9,9 +9,8 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     @booking.listing = Listing.find(params[:listing_id])
-
     if @booking.save
-      redirect_to listing_path(@listing) # TODO: Redirect this to the dashboard after Dashboard created
+      redirect_to listing_path(Listing.find(params[:listing_id])) # TODO: Redirect this to the dashboard after Dashboard created
     else
       render :new
     end
