@@ -1,4 +1,3 @@
-
 puts "start seed"
   Listing.destroy_all
   User.destroy_all
@@ -93,5 +92,6 @@ booking_fourth.booking_date = Date.today + rand(150)
 booking_fourth.save
 
 puts "seeded complete"
+
 
 
