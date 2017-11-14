@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :listings
-  # resources :listings do
-  #   resources :bookings
-  # end
+
+  resources :listings do
+    resources :bookings, only: [:new, :create]
+  end
 
   devise_for :users
   root to: 'pages#home'
