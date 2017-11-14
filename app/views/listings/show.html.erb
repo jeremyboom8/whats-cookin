@@ -6,6 +6,8 @@
 <p><%= @listing.address %></p>
 <h4><%= @listing.price %></h4>
 
+<%= link_to "Book now", new_listing_booking_path(@listing) %>
+<p></p>
 <%= link_to "Edit listing", edit_listing_path %>
 <p></p>
 <%= link_to "Delete listing", listing_path(@listing), method: :delete %>
