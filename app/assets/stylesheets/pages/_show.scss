@@ -1,0 +1,27 @@
+#banner-show {
+  height: calc(40vh - 70px);
+  margin-bottom: 10px;
+}
+
+.listing-main {
+  border: 15px;
+  background-color: white;
+  padding: 30px;
+  margin: 20px 0px 20px 0px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.listing-booking {
+  border: 15px;
+  background-color: white;
+  padding: 30px;
+  margin: 20px 0px 20px 0px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.listing-booking h2 {
+  margin-top: 0px;
+}

@@ -1,19 +1,42 @@
-<h1>Listings#show</h1>
-<p>Find me in app/views/listings/show.html.erb</p>
+<div class="banner"
+ style="background-image: linear-gradient(-225deg, rgba(252,74,26,0.3) 0%, rgba(247,183,51,0.3) 50%), url('https://images.unsplash.com/photo-1447279506476-3faec8071eee?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');" id="banner-show">
+  <div class="banner-content">
+    <h1><%= @listing.title %></h1>
+  </div>
+</div>
 
-<h2><%= @listing.title %></h2>
-<h3><%= @listing.description %></h3>
-<p><%= @listing.address %></p>
-<h4><%= @listing.price %></h4>
+<div class="container">
+  <div class="row">
 
-<% if @listing.photo? %>
-  <%= cl_image_tag @listing.photo.path, width: 200, height: 300, crop: :fill %>
-<% end %>
+    <div class="col-xs-12 col-sm-8">
+      <div class="listing-main">
+        <%= link_to listings_path do %>
+          <p><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back to all listings</p>
+        <% end %>
+        <h2><%= @listing.title %></h2>
+        <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true">
+            </span><%= @listing.address %></h3>
+        <p><em></em><%= @listing.description %></p>
+        <% if @listing.photo? %>
+          <%= cl_image_tag @listing.photo.path, width: 200, height: 300, crop: :fill %>
+        <% end %>
+        <p></p>
+        <%= link_to "Edit listing", edit_listing_path, class: "btn btn-primary" %>
+        <%= link_to "Delete listing", listing_path(@listing), method: :delete, class: "btn btn-primary" %>
+      </div>
+    </div>
 
-<%= link_to "Book now", new_listing_booking_path(@listing) %>
-<p></p>
-<%= link_to "Edit listing", edit_listing_path %>
-<p></p>
-<%= link_to "Delete listing", listing_path(@listing), method: :delete %>
-<p></p>
-<%= link_to "Back to all listings", listings_path %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="listing-booking">
+        <h2>DKK <%= @listing.price %></h2>
+
+        <!-- This form replaces the bookings/new page, and places this form directly on the show page -->
+        <%= simple_form_for [@listing, @booking] do |f| %>
+          <%= f.input :booking_date %>
+          <%= f.submit "Book now", class: "btn btn-primary" %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>

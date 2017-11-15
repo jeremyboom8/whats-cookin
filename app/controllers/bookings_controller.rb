@@ -9,6 +9,7 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.user = current_user
     @booking.listing = Listing.find(params[:listing_id])
+    @booking.status = "Pending"
     if @booking.save
       redirect_to listing_path(Listing.find(params[:listing_id])) # TODO: Redirect this to the dashboard after Dashboard created
     else
@@ -19,7 +20,7 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:date)
+    params.require(:booking).permit(:booking_date)
   end
 
 end
