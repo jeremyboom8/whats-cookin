@@ -7,12 +7,12 @@ puts "db's dropped"
 
 ######### users ########################################################
 
-john  = User.create(email: "john@gmail.com", password: "passwordjohn")
-cameron = User.create(email: "cameron@gmail.com", password: "passwordcameron")
-bill = User.create(email: "bill@gmail.com", password: "passwordbill")
-angela = User.create(email: "angela@gmail.com", password: "passwordangela")
-hillary = User.create(email: "hillary@gmail.com", password: "passwordhillary")
-joanna = User.create(email: "joanna@gmail.com", password: "passwordjoanna")
+john  = User.create(first_name: "Johnny", last_name: "Smith", facebook_picture_url: "http://r.fod4.com/c=sq/s=w200,pd1/o=80/http://p.fod4.com/p/channels/pzwrl/profile/s=w1200/o=95/m9oNs9QJQIi9QbUoNTvH_john-oliver-hbo.jpg", email: "john@gmail.com", password: "passwordjohn")
+cameron = User.create(first_name: "Cameron", last_name: "Smith", facebook_picture_url: "http://r.fod4.com/c=sq/s=w200,pd1/o=80/http://p.fod4.com/p/channels/pzwrl/profile/s=w1200/o=95/m9oNs9QJQIi9QbUoNTvH_john-oliver-hbo.jpg", email: "cameron@gmail.com", password: "passwordcameron")
+bill = User.create(first_name: "Bill", last_name: "Smith", facebook_picture_url: "http://r.fod4.com/c=sq/s=w200,pd1/o=80/http://p.fod4.com/p/channels/pzwrl/profile/s=w1200/o=95/m9oNs9QJQIi9QbUoNTvH_john-oliver-hbo.jpg", email: "bill@gmail.com", password: "passwordbill")
+angela = User.create(first_name: "Angela", last_name: "Smith", facebook_picture_url: "http://r.fod4.com/c=sq/s=w200,pd1/o=80/http://p.fod4.com/p/channels/pzwrl/profile/s=w1200/o=95/m9oNs9QJQIi9QbUoNTvH_john-oliver-hbo.jpg", email: "angela@gmail.com", password: "passwordangela")
+hillary = User.create(first_name: "Hillary", last_name: "Smith", facebook_picture_url: "http://r.fod4.com/c=sq/s=w200,pd1/o=80/http://p.fod4.com/p/channels/pzwrl/profile/s=w1200/o=95/m9oNs9QJQIi9QbUoNTvH_john-oliver-hbo.jpg", email: "hillary@gmail.com", password: "passwordhillary")
+joanna = User.create(first_name: "Joanna", last_name: "Smith", facebook_picture_url: "http://r.fod4.com/c=sq/s=w200,pd1/o=80/http://p.fod4.com/p/channels/pzwrl/profile/s=w1200/o=95/m9oNs9QJQIi9QbUoNTvH_john-oliver-hbo.jpg", email: "joanna@gmail.com", password: "passwordjoanna")
 
 # Listings ############################################################
 
