@@ -7,12 +7,12 @@ puts "db's dropped"
 
 ######### users ########################################################
 
-john  = User.create(email: "john@gmail.com", password: "passwordjohn")
-cameron = User.create(email: "cameron@gmail.com", password: "passwordcameron")
-bill = User.create(email: "bill@gmail.com", password: "passwordbill")
-angela = User.create(email: "angela@gmail.com", password: "passwordangela")
-hillary = User.create(email: "hillary@gmail.com", password: "passwordhillary")
-joanna = User.create(email: "joanna@gmail.com", password: "passwordjoanna")
+john  = User.create(first_name: "Johnny", last_name: "Smith", email: "john@gmail.com", password: "passwordjohn")
+cameron = User.create(first_name: "Cameron", last_name: "Smith", email: "cameron@gmail.com", password: "passwordcameron")
+bill = User.create(first_name: "Bill", last_name: "Smith", email: "bill@gmail.com", password: "passwordbill")
+angela = User.create(first_name: "Angela", last_name: "Smith", email: "angela@gmail.com", password: "passwordangela")
+hillary = User.create(first_name: "Hillary", last_name: "Smith", email: "hillary@gmail.com", password: "passwordhillary")
+joanna = User.create(first_name: "Joanna", last_name: "Smith", email: "joanna@gmail.com", password: "passwordjoanna")
 
 # Listings ############################################################
 
