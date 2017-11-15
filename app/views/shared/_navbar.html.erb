@@ -9,7 +9,7 @@
 
     <% if user_signed_in? %>
       <!-- Links when logged in -->
-      <%= link_to "Home", "#", class: "navbar-cookin-item navbar-cookin-link" %>
+      <%= link_to "Home", root_path, class: "navbar-cookin-item navbar-cookin-link" %>
       <%= link_to "Search listings", listings_path, class: "navbar-cookin-item navbar-cookin-link" %>
       <%= link_to "Help", "#", class: "navbar-cookin-item navbar-cookin-link" %>
 
