@@ -29,7 +29,7 @@ rice_cooker_one.save
 
 # Rice cooker two
 url = "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/102/10200/10200141.jpg"
-rice_cooker_two = Listing.new(title: " A rice Cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "Bartholinsgade 7")
+rice_cooker_two = Listing.new(title: " Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "Bartholinsgade 7")
 rice_cooker_two.user = cameron
 rice_cooker_two.photo_url = url
 rice_cooker_two.save
@@ -85,7 +85,7 @@ blender_one.save
 
 # blender two
 url = "https://images-na.ssl-images-amazon.com/images/I/71-Xr5c8JuL._SL1500_.jpg"
-blender_two = Listing.new(title: "easy and simple to use basic blender", description: "Purple Hamilton Beach Personal Single Serve Blender. Basic blender that works for most tasks", price: 100, address: "Hans Kirks Vej 4")
+blender_two = Listing.new(title: "Easy and simple to use basic blender", description: "Purple Hamilton Beach Personal Single Serve Blender. Basic blender that works for most tasks", price: 100, address: "Hans Kirks Vej 4")
 blender_two.user = angela
 blender_two.photo_url = url
 blender_two.save
