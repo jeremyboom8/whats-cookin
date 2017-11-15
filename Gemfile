@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.3.5'
 
+gem 'cloudinary'
+gem 'attachinary'
+gem 'jquery-fileupload-rails'
+gem 'coffee-rails'
+
 gem 'devise'
-gem "simple_form"
 
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
