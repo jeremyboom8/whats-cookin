@@ -1,11 +1,89 @@
 .card-frame {
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  width: 300px;
+  margin: 10px;
 }
 
 .card-header {
   height: 100px;
-  width: 300px;
+  width: 100%;
   background-color: $yellow;
-  text-align: right;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+}
+
+.card-header h2 {
+  color: $text-light;
+  font-size: 24px;
+  align-self: center;
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+.image-wrapper {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.image-wrapper img {
+  height: 200px;
+  padding: 5px 0 5px 0;
+}
+
+.card-footer {
+  height: 100px;
+  width: 100%;
+  background-color: $light-gray;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info {
+  align-self: center;
+  padding: 0 0 0 10px;
+}
+.card-footer h2 {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.card-footer p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.red-circle-helper {
+  padding-top: 15px;
+  background-color: $red;
+  align-self: center;
+  margin-right: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.red-circle-helper h2 {
+  color: $text-light;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.red-circle-helper:hover {
+  background-color: white;
+  padding-top: 13px;
+  border: 2px $red solid;
+  h2 {
+    color: $text-dark;
+  }
 }
