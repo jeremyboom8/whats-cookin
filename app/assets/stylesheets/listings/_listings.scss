@@ -1,0 +1,20 @@
+.main-container {
+  display: flex;
+}
+
+.maps-placeholder {
+  background-color: gray;
+  border: 5px solid gray;
+  width: 1400px;
+  color: white;
+  margin: 10px;
+  flex: 0 0 400px;
+  height: 100vh;
+  position: sticky !important;
+  top: 0 !important;
+}
+
+#listings-headline {
+  margin: 10px,
+
+}
