@@ -15,23 +15,23 @@
 <div class="container marketing">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading.</h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading">Sushi evening with friends?</h2>
+      <p class="lead">Did you ever promise your friends an amazing Sushi evening, but you did not have the right equipment? Maybe it is too expensive. Maybe you would not use it often or just need it for that special evening. Worry no more. <strong> "Whats cookin" has you covered! </strong> </p>
     </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    <div class="col-md-5 ">
+      <%= image_tag("sushi-front", class: "featurette-image img-responsive center-block", id: "sushi-pic") %>
     </div>
   </div>
 
-  <hr class="featurette-divider">
+  <hr class="featurette-diver">
 
   <div class="row featurette">
     <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading">Oh yeah, it's that good.</h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading">Lend any kitchen tool!</h2>
+      <p class="lead">Over 2 Million kitchen tools are available world wide. So whenever and whereever you plan a fancy dinner, all you need is just a klick away! </p>
     </div>
     <div class="col-md-5 col-md-pull-7">
-      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <%= image_tag("kitchen-front", class: "featurette-image img-responsive center-block", id: "kitchen-pic") %>
     </div>
   </div>
 
@@ -39,11 +39,11 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one.</h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <h2 class="featurette-heading">And the best thing</h2>
+      <p class="lead">With every dollar you spend on any kitchen tool, there is one dollar donated to the popular charity foundation <strong>"Make pineapple pizza great again!"</strong> </p>
     </div>
     <div class="col-md-5">
-      <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      <%= image_tag("mamma_mia", class: "featurette-image img-responsive center-block", id: "mamma-pic") %>
     </div>
   </div>
 
@@ -51,7 +51,7 @@
 
   <div class="row">
     <div class="col-xs-12 text-center">
-      <%= link_to("Check out the design of all components", pages_design_test_path, class: "btn btn-primary btn-lg") %>
+      <%= link_to("Check out equipment near you", listings_path, class: "btn btn-primary btn-lg") %>
       </div>
   </div>
 
