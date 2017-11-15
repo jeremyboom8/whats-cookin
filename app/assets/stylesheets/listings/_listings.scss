@@ -7,7 +7,6 @@
   border: 5px solid gray;
   width: 1400px;
   color: white;
-  margin: 10px;
   flex: 0 0 400px;
   height: 100vh;
   position: sticky !important;
@@ -15,6 +14,8 @@
 }
 
 #listings-headline {
-  margin: 10px,
-
+  padding: 25px 15px;
+  background-color: $light-gray;
+  text-align: center;
+  margin: 0;
 }
