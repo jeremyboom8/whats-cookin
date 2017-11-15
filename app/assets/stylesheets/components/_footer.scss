@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  padding: 0px 50px;
+  padding: 0px 20px;
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
@@ -18,9 +18,42 @@
   font-size: 24px;
   padding: 0px 10px;
 }
+
 .footer-links a:hover {
   opacity: 1;
 }
 .footer .fa-heart {
   color: #D23333;
+}
+
+.footer_logo {
+  width: 30px;
+}
+
+.footer-words {
+ display: flex;
+ align-items: center;
+}
+
+.footer-words p {
+  margin: 0px 30px;
+  font-size: 24px;
+}
+
+.footer_logo2 {
+  width: 20px;
+}
+
+// jhfkjvfkvf
+
+.footer-words p {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
+.footer-words p:hover {
+  opacity: 1;
 }
