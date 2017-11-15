@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.3.5'
 
+# Facebook authentification
+gem 'omniauth-facebook'
+
 gem 'cloudinary'
 gem 'attachinary'
 gem 'jquery-fileupload-rails'
