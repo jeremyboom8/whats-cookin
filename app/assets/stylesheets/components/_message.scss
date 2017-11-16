@@ -1,0 +1,105 @@
+.message {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  border-bottom: 1px solid rgba(220,224,244,0.4);
+  background-color: white;
+}
+
+.message p {
+  margin: 0;
+}
+.message:last-child {
+  border-bottom: none;
+  margin-bottom: 20px;
+}
+.message-body {
+  flex-grow: 1;
+}
+.message-name {
+  padding-left: 10px;
+  min-width: 100px;
+  align-self: center;
+}
+.message .image-wrapper {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.image-wrapper .avatar-md {
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  align-self: center;
+}
+.message-name h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.message-name p {
+  font-size: 13px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+.message-body {
+  padding-left: 10px;
+  font-size: 13px;
+  color: rgba(0,0,0,0.7);
+  align-self: center;
+
+}
+.message-body {
+  padding-left: 20px;
+  color: rgba(0,0,0,0.4);
+}
+.message-body strong{
+  color: rgba(0,0,0,0.9);
+  color: rgba(0,0,0,0.9);
+}
+.message-body p {
+  margin: 6px 0;
+}
+.message-status {
+  font-size: 14px;
+  font-weight: bold;
+  align-self: center;
+  margin-right: 10px;
+}
+.status.accepted {
+  color: #04A366;
+}
+.status.declined {
+  color: red;
+}
+.status.pending {
+  color: lightgrey;
+}
+
+.table-button {
+  padding: 15px;
+  border-bottom: 1px solid rgba(220,224,244,0.4);
+  background-color: $red;
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+  color: $text-light;
+}
+
+.table-button:hover {
+  background-color: $dark-red;
+}
+
+.message-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+  background: black;
+  opacity: 0;
+}

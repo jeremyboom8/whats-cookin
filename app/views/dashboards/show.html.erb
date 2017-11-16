@@ -1,0 +1,60 @@
+
+<div class="container">
+  <h1><%= "#{@user.first_name} #{@user.last_name}'s Dashboard" %></h1>
+
+  <h3>Your Listings</h3>
+  <% @listings.each do |listing| %>
+    <div class="message">
+      <div class="image-wrapper">
+        <%= cl_image_tag listing.photo.path, class: "avatar-md", crop: :thumb %>
+      </div>
+      <div class="message-name">
+        <h3 style="color: green; font-weight: bold">Online</h3>
+      </div>
+      <div class="message-body">
+        <p><strong> <%= listing.title %> </strong></p>
+        <p>
+          <%= listing.description %>
+        </p>
+      </div>
+      <div class="message-status">
+        <p class="status pending"><%=  %></p>
+        <p class="price"><%= listing.price %> DKK/day</p>
+      </div>
+    </div>
+  <% end %>
+  <div class="table-button text-center">
+    List your kitchen tools and make money
+    <%= link_to "",  new_listing_path, class: "message-link"%>
+  </div>
+
+
+  <h3>Booked kitchen tools</h3>
+  <% @bookings.each do |booking| %>
+    <div class="message">
+      <div class="image-wrapper">
+        <%= cl_image_tag booking.listing.photo.path, class: "avatar-md", crop: :thumb %>
+      </div>
+      <div class="message-name">
+        <p><%= "#{booking.listing.user.first_name} #{booking.listing.user.last_name}" %></p>
+        <p><%= booking.booking_date %></p>
+      </div>
+      <div class="message-body">
+        <p>
+          <strong><%= booking.listing.title %></strong>
+        </p>
+        <p>
+          <%= booking.listing.description %>
+        </p>
+      </div>
+      <div class="message-status">
+        <p class="status pending"><%=  %></p>
+        <p class="price"><%= booking.listing.price %> DKK/day</p>
+      </div>
+    </div>
+  <% end %>
+  <div class="table-button text-center">
+    Show me more equipment
+    <%= link_to "",  listings_path, class: "message-link"%>
+  </div>
+</div>
