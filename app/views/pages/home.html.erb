@@ -3,12 +3,12 @@
   <div class="banner-content">
     <h1>Got ricecooker?</h1>
     <p id="remove-bottom-margin">Borrow cooking equipment from your neighbors</p>
-    <form class="navbar-form">
-      <div class="form-group">
-          <input type="text" class="form-control" placeholder="What do you need?">
-      </div>
-      <%= link_to "Search", listings_path, class: "btn btn-primary btn-md", id: "cocktail-index" %>
-    </form>
+     <form action="/listings" method="get" class="navbar-form">
+        <div class="form-group">
+        <input type="text" name="search" class="form-control" placeholder="Where are you?">
+        </div>
+        <input type="submit" value="Search" class="btn btn-primary btn-md">
+      </form>
   </div>
 </div>
 
