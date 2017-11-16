@@ -11,7 +11,7 @@ class BookingsController < ApplicationController
     @booking.listing = Listing.find(params[:listing_id])
     @booking.status = "Pending"
     if @booking.save
-      redirect_to listing_path(Listing.find(params[:listing_id])) # TODO: Redirect this to the dashboard after Dashboard created
+      redirect_to dashboard_path
     else
       render :new
     end

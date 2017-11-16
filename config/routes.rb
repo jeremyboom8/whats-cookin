@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'dashboards/show'
+
   root to: 'pages#home'
   mount Attachinary::Engine => "/attachinary"
   resources :listings do
@@ -10,4 +12,8 @@ Rails.application.routes.draw do
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   get 'pages/design_test', to: 'pages#design_test'
+
+  get '/dashboard', to: 'dashboards#show'
+
+  resources :users
 end
