@@ -1,11 +1,11 @@
 <div class="main-container">
-  <div class="cards">
+  <div class="cards-container">
     <h4 id="listings-headline">Cooking equipment available this weekend </h4>
     <div class="row">
       <% @listings.each do |listing| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card-frame">
-      <%=  link_to (listing_path(listing)) do %>
+          <%=  link_to (listing_path(listing)) do %>
           <div class="card-header">
             <h2> <%= listing.title %></h2>
           </div>
@@ -21,12 +21,29 @@
               <h2>i</h2>
             </div>
           </div>
+          <% end %>
         </div>
       </div>
-        <% end %>
       <% end %>
     </div>
   </div>
-  <div class="maps-placeholder"> Google maps placeholder.</div>
+  <div id="map"></div>
 </div>
+
+
+<% content_for(:after_js) do %>
+  <script type="text/javascript">
+    var handler = Gmaps.build('Google');
+    handler.buildMap({ internal: { id: 'map' } }, function(){
+      markers = handler.addMarkers(<%= raw @hash.to_json %>);
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
+      if (markers.length == 0) {
+        handler.getMap().setZoom(2);
+      } else if (markers.length == 1) {
+        handler.getMap().setZoom(14);
+      }
+    });
+  </script>
+<% end %>
 <!-- Display all the listings -->

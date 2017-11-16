@@ -2,15 +2,12 @@
   display: flex;
 }
 
-.maps-placeholder {
-  background-color: gray;
-  border: 5px solid gray;
-  width: 1400px;
-  color: white;
+#map {
   flex: 0 0 400px;
   height: 100vh;
   position: sticky !important;
   top: 0 !important;
+  margin-left: 10px;
 }
 
 #listings-headline {
@@ -19,3 +16,8 @@
   text-align: center;
   margin: 0;
 }
+
+// .cards-container {
+//   margin-right: 50px;
+// }
+
