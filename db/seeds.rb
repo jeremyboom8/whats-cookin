@@ -92,25 +92,25 @@ blender_two.save
 
 
 ########## bookings #########################################
-booking_one = Booking.new(status: "pending")
+booking_one = Booking.new(status: "Pending")
 booking_one.listing = blender_one
 booking_one.user = john
 booking_one.booking_date = Date.today + rand(150)
 booking_one.save
 
-booking_two = Booking.new(status: "rejected")
+booking_two = Booking.new(status: "Rejected")
 booking_two.listing = bbq_grill_two
 booking_two.user = john
 booking_two.booking_date = Date.today + rand(150)
 booking_two.save
 
-booking_third = Booking.new(status: "approved")
+booking_third = Booking.new(status: "Approved")
 booking_third.listing = rice_cooker_two
 booking_third.user = bill
 booking_third.booking_date = Date.today + rand(150)
 booking_third.save
 
-booking_fourth = Booking.new(status: "approved")
+booking_fourth = Booking.new(status: "Approved")
 booking_fourth.listing = wok
 booking_fourth.user = angela
 booking_fourth.booking_date = Date.today + rand(150)
