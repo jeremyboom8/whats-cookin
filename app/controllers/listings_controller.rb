@@ -3,12 +3,18 @@ class ListingsController < ApplicationController
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
   def index
-    @listings = Listing.where.not(latitude: nil, longitude: nil)
 
-    @hash = Gmaps4rails.build_markers(@listings) do |list, marker|
-      marker.lat list.latitude
-      marker.lng list.longitude
-      # marker.infowindow render_to_string(partial: "/flats/map_box", locals: { flat: flat })
+    @search_term = params[:search]
+
+    if @search_term == "" || @search_term.nil?
+      @listings = Listing.where.not(latitude: nil, longitude: nil)
+    else
+      @listings = Listing.near(@search_term, 20)
+    end
+    @hash = Gmaps4rails.build_markers(@listings) do |listing, marker|
+      marker.lat listing.latitude
+      marker.lng listing.longitude
+      marker.infowindow render_to_string(partial: "/listings/map_box", locals: { listing: listing })
     end
   end
 

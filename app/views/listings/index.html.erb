@@ -1,6 +1,11 @@
 <div class="main-container">
   <div class="cards-container">
-    <h4 id="listings-headline">Cooking equipment available this weekend </h4>
+    <form action="/listings" method="get" class="navbar-form">
+       <div class="form-group">
+        <input type="text" name="search" id="list_address" class="form-control" placeholder="Where are you?">
+       </div>
+       <input type="submit" value="Search" class="btn btn-primary btn-md">
+     </form>
     <div class="row">
       <% @listings.each do |listing| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -46,4 +51,16 @@
     });
   </script>
 <% end %>
-<!-- Display all the listings -->
+
+
+
+
+
+
+
+
+
+
+
+
+
