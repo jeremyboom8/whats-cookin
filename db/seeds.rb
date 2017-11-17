@@ -22,13 +22,14 @@ joanna = User.create(first_name: "Joanna", last_name: "Smith", facebook_picture_
 
 # Rice cooker one
 url = "https://images-na.ssl-images-amazon.com/images/I/51SnSP8WHSL._SL1181_.jpg"
+rice_cooker_one = Listing.new(title: "OBH Rice Cooker", description: "Great OBH Nordic Rice Cooker", price: 40, address: "Ahornsgade 15, Copenhagen")
 rice_cooker_one.user = john
 rice_cooker_one.photo_url = url
 rice_cooker_one.save
 
 # Rice cooker two
 url = "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/102/10200/10200141.jpg"
-rice_cooker_two = Listing.new(title: " Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "12 Lovedale Cl Riverton, Cape Town")
+rice_cooker_two = Listing.new(title: "Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "12 Lovedale Cl Riverton, Cape Town")
 rice_cooker_two.user = cameron
 rice_cooker_two.photo_url = url
 rice_cooker_two.save
