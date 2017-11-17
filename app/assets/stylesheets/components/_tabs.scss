@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  margin-top: 50px;
+}
+
+.tab {
+  padding: 10px 10px;
+  background-color: $light-gray;
+  width: 250px;
+  margin-right: 2px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top: 1px white solid;
+  border-right: 1px white solid;
+  border-left: 1px white solid;
+  text-align: center;
+}
+
+.tab:hover {
+  // padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: $red;
+  color: $text-light;
+  z-index: 100000;
+}
+
+#bookings {
+  display: none;
+}
