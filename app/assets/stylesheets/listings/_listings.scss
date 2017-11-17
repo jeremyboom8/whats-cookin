@@ -3,6 +3,18 @@
   justify-content: space-between;
 }
 
+.listing-content {
+  text-align: center;
+}
+
+#avatar {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
 #map {
   flex: 0 0 400px;
   height: 100vh;
@@ -16,6 +28,3 @@
   text-align: center;
   margin: 0;
 }
-
-
-

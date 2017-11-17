@@ -13,16 +13,16 @@
         <%= link_to listings_path do %>
           <p><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back to all listings</p>
         <% end %>
-        <h2><%= @listing.title %></h2>
-        <h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true">
-            </span><%= @listing.address %></h3>
-        <p><em></em><%= @listing.description %></p>
-        <% if @listing.photo? %>
-          <%= cl_image_tag @listing.photo.path, width: 200, height: 300, crop: :fill %>
-        <% end %>
-        <p></p>
-        <%= link_to "Edit listing", edit_listing_path, class: "btn btn-primary" %>
-        <%= link_to "Delete listing", listing_path(@listing), method: :delete, class: "btn btn-primary" %>
+        <div class="listing-content">
+          <h2><%= @listing.title %></h2>
+          <% if @listing.photo? %>
+            <%= cl_image_tag @listing.photo.path, width: 300, crop: :fill, style: "margin-bottom: 30px;" %>
+          <% end %>
+          <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true">
+              </span><%= @listing.address %></p>
+          <p><em></em><%= @listing.description %></p>
+          <p></p>
+        </div>
       </div>
     </div>
 
@@ -30,7 +30,6 @@
       <div class="listing-booking">
         <h2>DKK <%= @listing.price %></h2>
 
-        <!-- This form replaces the bookings/new page, and places this form directly on the show page -->
         <%= simple_form_for [@listing, @booking] do |f| %>
           <%= f.input :booking_date %>
           <%= f.submit "Book now", class: "btn btn-primary" %>
@@ -38,5 +37,15 @@
 
       </div>
     </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <div class="listing-booking">
+
+        <h2><%= @listing.user.first_name %></h2>
+        <%= image_tag @listing.user.facebook_picture_url, id: "avatar" %>
+
+      </div>
+    </div>
+
   </div>
 </div>
