@@ -1,0 +1,49 @@
+<div class="profile">
+  <div class="partial-box">
+    <div class="text-center">
+      <%= cl_image_tag @user.facebook_picture_url, class: "profile-avatar" %>
+      <h4><%= "#{@user.first_name} #{@user.last_name}" %></h4>
+    </div>
+  </div>
+
+  <div class="partial-box flex-grow">
+    <div class="flex-parent">
+      <div>
+       <%= image_tag("pineapple.png", class: "prof-desc-img") %>
+      </div>
+      <div class="flex-grow">
+        <h5>Contribution to "Make pineapple pizza great again":</h5>
+      </div>
+        <h4>$185</h4>
+    </div>
+
+    <div class="flex-parent">
+      <div>
+       <%= image_tag("money_bag.png", class: "prof-desc-img") %>
+      </div>
+      <div class="flex-grow">
+        <h5>Total number of your Listings:</h5>
+      </div>
+        <h4> <%= @listings.count %> </h4>
+    </div>
+
+    <div class="flex-parent">
+      <div>
+       <%= image_tag("cooking-icon.png", class: "prof-desc-img") %>
+      </div>
+      <div class="flex-grow">
+        <h5>Total number of tools you used:</h5>
+      </div>
+        <h4> <%= @bookings.count %> </h4>
+    </div>
+  </div>
+
+  <div class="partial-box">
+    <%= simple_form_for @user, url: user_registration_path, method: :patch do |f| %>
+      <%= f.input :first_name %>
+      <%= f.input :last_name %>
+      <%= f.input :email %>
+      <%= f.button :submit, "Update your information", class: "btn-md orange-button" %>
+    <% end %>
+  </div>
+</div>
