@@ -22,70 +22,70 @@ joanna = User.create(first_name: "Joanna", last_name: "Smith", facebook_picture_
 
 # Rice cooker one
 url = "https://images-na.ssl-images-amazon.com/images/I/51SnSP8WHSL._SL1181_.jpg"
-rice_cooker_one = Listing.new(title: "OBH Rice Cooker", description: "Great OBH Nordic Rice Cooker", price: 40, address: "Ahornsgade 15, Copenhagen")
+rice_cooker_one = Listing.new(title: "OBH Rice Cooker", description: "Great OBH Nordic Rice Cooker", price: 40, address: "Ahornsgade 15, Copenhagen, Denmark")
 rice_cooker_one.user = john
 rice_cooker_one.photo_url = url
 rice_cooker_one.save
 
 # Rice cooker two
 url = "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/102/10200/10200141.jpg"
-rice_cooker_two = Listing.new(title: "Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "12 Lovedale Cl Riverton, Cape Town")
+rice_cooker_two = Listing.new(title: "Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "12 Lovedale Cl Riverton, Cape Town, South Africa")
 rice_cooker_two.user = cameron
 rice_cooker_two.photo_url = url
 rice_cooker_two.save
 
 # Rice cooker three
 url = "http://www.momorice.com/wp-content/uploads/2013/11/zojirushi_ns-lac05_solo.jpg"
-rice_cooker_three = Listing.new(title: "Rice Cooker - Zojirushi ", description: "Never used Zojirushi NP-HCC10XH Rice cooker. As good as new ", price: 120, address: "Skindergade 13, Copenhagen")
+rice_cooker_three = Listing.new(title: "Rice Cooker - Zojirushi ", description: "Never used Zojirushi NP-HCC10XH Rice cooker. As good as new ", price: 120, address: "Skindergade 13, Copenhagen, Denmark")
 rice_cooker_three.user = bill
 rice_cooker_three.photo_url = url
 rice_cooker_three.save
 
 # BBQ grill one
 url = "https://i5.walmartimages.ca/images/Enlarge/025/303/999999-77924025303.jpg"
-bbq_grill_one = Listing.new(title: "Weber grill. Come and rent", description: "Weber 10020 Smokey Joe 14-Inch Portable Grill - used for two years, works well", price: 100, address: "Kapelvej 11, Copenhagen")
+bbq_grill_one = Listing.new(title: "Weber grill. Come and rent", description: "Weber 10020 Smokey Joe 14-Inch Portable Grill - used for two years, works well", price: 100, address: "Kapelvej 11, Copenhagen, Denmark")
 bbq_grill_one.user = angela
 bbq_grill_one.photo_url = url
 bbq_grill_one.save
 
 # BBQ grill two
 url = "https://images3.campingworld.com/CampingWorld/images/products/3000/1000x1000/35188n.jpg"
-bbq_grill_two = Listing.new(title: "Coleman grill. Great for camping", description: "Easy and portable grill ", price: 200, address: "77 Dingle Rd Vasco Estate, Cape Town")
+bbq_grill_two = Listing.new(title: "Coleman grill. Great for camping", description: "Easy and portable grill ", price: 200, address: "77 Dingle Rd Vasco Estate, Cape Town, South Africa")
 bbq_grill_two.user = hillary
 bbq_grill_two.photo_url = url
 bbq_grill_two.save
 
 # waffle iron
 url = "http://kitchen-review.com/wp-content/uploads/2015/09/Presto-FlipSide-Belgian-Waffle-Maker.jpg"
-waffle_iron = Listing.new(title: "Presto waffle iron for rent", description: "Easy to use waffle iron for rent, good standard", price: 50, address: "Lakeside Street, Cape Town")
+waffle_iron = Listing.new(title: "Presto waffle iron for rent", description: "Easy to use waffle iron for rent, good standard", price: 50, address: "Lakeside Street 4, Cape Town, South Africa")
 waffle_iron.user = joanna
 waffle_iron.photo_url = url
 waffle_iron.save
 
 # paella_pan
 url = "https://cdn1.everten.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/a/paella-pan-cerise.1478243907.jpg"
-paella_pan = Listing.new(title: "Castavia paella pan", description: "Complete Paella Kit for up to 13 Servings", price: 200, address: "Sankt Hans Gade 2, Copenhagen")
+paella_pan = Listing.new(title: "Castavia paella pan", description: "Complete Paella Kit for up to 13 Servings", price: 200, address: "Sankt Hans Gade 2, Copenhagen, Denmark")
 paella_pan.user = john
 paella_pan.photo_url = url
 paella_pan.save
 
 # wok
 url = "https://images-na.ssl-images-amazon.com/images/I/71iHEM-grhL._SL1500_.jpg"
-wok = Listing.new(title: "Wok for rent - Helen Chen's Asian Kitchen", description: "Helen Chen's Asian Kitchen Nonstick Wok Stir Fry Excalibur Pan, 12-Inch for rent - used only a couple of times", price: 50, address: "Nørre Søgade 4, Copenhagen")
+wok = Listing.new(title: "Wok for rent - Helen Chen's Asian Kitchen", description: "Helen Chen's Asian Kitchen Nonstick Wok Stir Fry Excalibur Pan, 12-Inch for rent - used only a couple of times", price: 50, address: "Nørre Søgade 4, Copenhagen, Denmark")
 wok.user = bill
 wok.photo_url = url
 wok.save
 
 # blender one
 url = "https://www.oster.com/on/demandware.static/-/Sites-master-catalog/default/dwd19d3338/images/highres/BLSTMB-CBG-000-1a.jpg"
-blender_one = Listing.new(title: "Top Oster Pro 1200 Blender!!", description: "Rent my blender - great for making smoothies", price: 100, address: "Sjællandsgade 16, Copenhagen")
+blender_one = Listing.new(title: "Top Oster Pro 1200 Blender!!", description: "Rent my blender - great for making smoothies", price: 100, address: "Sjællandsgade 16, Copenhagen, Denmark")
 blender_one.user = joanna
 blender_one.photo_url = url
 blender_one.save
 
 # blender two
 url = "https://images-na.ssl-images-amazon.com/images/I/71-Xr5c8JuL._SL1500_.jpg"
-blender_two = Listing.new(title: "Easy and simple to use basic blender", description: "Purple Hamilton Beach Personal Single Serve Blender. Basic blender that works for most tasks", price: 100, address: "Hans Kirks Vej 4, Copenhagen")
+blender_two = Listing.new(title: "Easy and simple to use basic blender", description: "Purple Hamilton Beach Personal Single Serve Blender. Basic blender that works for most tasks", price: 100, address: "Hans Kirks Vej 4, Copenhagen, Denmark")
 blender_two.user = angela
 blender_two.photo_url = url
 blender_two.save
