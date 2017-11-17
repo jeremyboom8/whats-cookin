@@ -29,7 +29,7 @@ rice_cooker_one.save
 
 # Rice cooker two
 url = "https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/102/10200/10200141.jpg"
-rice_cooker_two = Listing.new(title: " Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "12-4 Lovedale Cl Riverton, Cape Town ,7490, South Africa")
+rice_cooker_two = Listing.new(title: " Rice cooker from Hamilton", description: "Hamilton Beach Rice Cooker in good standard", price: 80, address: "12 Lovedale Cl Riverton, Cape Town")
 rice_cooker_two.user = cameron
 rice_cooker_two.photo_url = url
 rice_cooker_two.save
@@ -50,14 +50,14 @@ bbq_grill_one.save
 
 # BBQ grill two
 url = "https://images3.campingworld.com/CampingWorld/images/products/3000/1000x1000/35188n.jpg"
-bbq_grill_two = Listing.new(title: "Coleman grill. Great for camping", description: "Easy and portable grill ", price: 200, address: "77 Dingle Rd Vasco Estate, Cape Town, 7460, South Africa")
+bbq_grill_two = Listing.new(title: "Coleman grill. Great for camping", description: "Easy and portable grill ", price: 200, address: "77 Dingle Rd Vasco Estate, Cape Town")
 bbq_grill_two.user = hillary
 bbq_grill_two.photo_url = url
 bbq_grill_two.save
 
 # waffle iron
 url = "http://kitchen-review.com/wp-content/uploads/2015/09/Presto-FlipSide-Belgian-Waffle-Maker.jpg"
-waffle_iron = Listing.new(title: "Presto waffle iron for rent", description: "Easy to use waffle iron for rent, good standard", price: 50, address: "Stengade 19, copenhagen")
+waffle_iron = Listing.new(title: "Presto waffle iron for rent", description: "Easy to use waffle iron for rent, good standard", price: 50, address: "Lakeside Street, Cape Town")
 waffle_iron.user = joanna
 waffle_iron.photo_url = url
 waffle_iron.save
