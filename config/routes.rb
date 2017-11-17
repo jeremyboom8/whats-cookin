@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'dashboards/show'
-
   root to: 'pages#home'
   mount Attachinary::Engine => "/attachinary"
   resources :listings do
