@@ -3,7 +3,6 @@
   <%= link_to root_path, class: "navbar-cookin-brand" do %>
     <%= image_tag "whats-cookin-logo.png" %>
   <% end %>
-
   <!-- Right Navigation -->
   <div class="navbar-cookin-right hidden-xs hidden-sm">
 
@@ -12,6 +11,7 @@
       <%= link_to "Home", root_path, class: "navbar-cookin-item navbar-cookin-link" %>
       <%= link_to "Search listings", listings_path, class: "navbar-cookin-item navbar-cookin-link" %>
       <%= link_to "Help", "#", class: "navbar-cookin-item navbar-cookin-link" %>
+      <%= link_to "#{current_user.first_name} #{current_user.last_name}", dashboard_path , class: "navbar-cookin-item navbar-cookin-link" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-cookin-item">
@@ -55,7 +55,7 @@
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-cookin-dropdown-menu">
         <li><%= link_to "Profile", "#" %></li>
-        <li><%= link_to "Dashboard", "#" %></li>
+        <li><%= link_to "Dashboard", dashboard_path %></li>
         <li><%= link_to "Search listings", listings_path %></li>
       </ul>
     </div>
