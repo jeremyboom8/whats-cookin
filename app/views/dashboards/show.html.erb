@@ -25,6 +25,12 @@
           <p class="status pending"><%=  %></p>
           <p class="price"><%= listing.price %> DKK/day</p>
         </div>
+        <div class="message-status">
+        <%= link_to edit_listing_path(listing) do %>
+          <i class="fa fa-pencil-square-o" id="edit_button" aria-hidden="true"></i>
+        <% end %>
+        </div>
+
       </div>
     <% end %>
     <div class="table-button text-center">
@@ -52,7 +58,13 @@
           </p>
         </div>
         <div class="message-status">
-          <p class="status pending"><%=  %></p>
+          <% if booking.status == "Pending" %>
+            <p class="status pending"><%= booking.status  %></p>
+          <% elsif booking.status == "Rejected" %>
+            <p class="status rejected"><%= booking.status  %></p>
+          <% else %>
+            <p class="status Approved"><%= booking.status  %></p>
+          <% end %>
           <p class="price"><%= booking.listing.price %> DKK/day</p>
         </div>
       </div>
