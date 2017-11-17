@@ -21,7 +21,6 @@
           <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true">
               </span><%= @listing.address %></p>
           <p><em></em><%= @listing.description %></p>
-          <p></p>
         </div>
       </div>
     </div>
@@ -35,14 +34,18 @@
           <%= f.submit "Book now", class: "btn btn-primary" %>
         <% end %>
 
+        <p style="margin-bottom: 10px; margin-top: 20px;">Unavailable Dates</p>
+        <% @bookings.each do |cb| %>
+          <p style="margin-bottom: 0px;"><%= cb.booking_date %></p>
+        <% end %>
       </div>
     </div>
 
     <div class="col-xs-12 col-sm-4">
       <div class="listing-booking">
 
-        <h2><%= @listing.user.first_name %></h2>
-        <%= image_tag @listing.user.facebook_picture_url, id: "avatar" %>
+        <%= image_tag @listing.user.facebook_picture_url, id: "avatar", style: "display: inline-block;" %>
+        <h2 style="display: inline-block;"><%= @listing.user.first_name %></h2>
 
       </div>
     </div>
