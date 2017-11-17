@@ -4,6 +4,7 @@
   padding-right: 10px;
   border-bottom: 1px solid rgba(220,224,244,0.4);
   background-color: white;
+  position: relative;
 }
 
 .message p {
@@ -72,7 +73,7 @@
 .status.accepted {
   color: #04A366;
 }
-.status.declined {
+.status.rejected {
   color: red;
 }
 .status.pending {
@@ -103,3 +104,13 @@
   background: black;
   opacity: 0;
 }
+
+
+#edit_button {
+  position: absolute;
+  top: 10px;
+  right: 28px;
+}
+
+
+
