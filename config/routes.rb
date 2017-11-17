@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   end
 
   devise_for :users,
-    controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+    controllers: { omniauth_callbacks: 'users/omniauth_callbacks', registrations: 'users/registrations' }
 
   get 'pages/design_test', to: 'pages#design_test'
 

@@ -1,6 +1,8 @@
 
 <div class="container">
-  <h1><%= "#{@user.first_name} #{@user.last_name}'s Dashboard" %></h1>
+
+  <%= render('shared/profile') %>
+
   <div class="tabs">
     <div id="tab-listings" class="tab active"><h4>Your Listings</h4></div>
     <div id="tab-bookings" class="tab"><h4>Booked kitchen tools</h4></div>
