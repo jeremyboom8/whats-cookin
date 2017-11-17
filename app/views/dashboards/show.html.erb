@@ -64,26 +64,28 @@
   </div>
 </div>
 
-<script> //Javascript for tab logic
-  const listings = document.querySelector("#listings");
-  const bookings = document.querySelector("#bookings");
-  const tab_listings = document.querySelector("#tab-listings");
-  const tab_bookings = document.querySelector("#tab-bookings");
+<% content_for :tab_logic do %>
+  <script> //Javascript for tab logic
+    const listings = document.querySelector("#listings");
+    const bookings = document.querySelector("#bookings");
+    const tab_listings = document.querySelector("#tab-listings");
+    const tab_bookings = document.querySelector("#tab-bookings");
 
-  function listingClick() {
-    listings.style.display = "block";
-    bookings.style.display = "none";
-    tab_bookings.classList.remove("active");
-    tab_listings.classList.add("active");
-  }
+    function listingClick() {
+      listings.style.display = "block";
+      bookings.style.display = "none";
+      tab_bookings.classList.remove("active");
+      tab_listings.classList.add("active");
+    }
 
-  function bookingClick() {
-    bookings.style.display = "block";
-    listings.style.display = "none";
-    tab_listings.classList.remove("active");
-    tab_bookings.classList.add("active");
-  }
-
-  tab_listings.addEventListener("click", listingClick);
-  tab_bookings.addEventListener("click", bookingClick);
-</script>
+    function bookingClick() {
+      bookings.style.display = "block";
+      listings.style.display = "none";
+      tab_listings.classList.remove("active");
+      tab_bookings.classList.add("active");
+    }
+    console.log("Hi")
+    tab_listings.addEventListener("click", listingClick);
+    tab_bookings.addEventListener("click", bookingClick);
+  </script>
+<% end %>
