@@ -1,7 +1,32 @@
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" name="jquery"></script>
+
+<script type="text/javascript">
+  // create the back to top button
+  $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+
+  // change the value with how many pixels scrolled down the button will appear
+  var amountScrolled = 200;
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() > amountScrolled ) {
+      $('a.back-to-top').fadeIn('slow');
+    } else {
+      $('a.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('a.back-to-top, a.simple-back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 700);
+    return false;
+  });
+</script>
+
 <div class="banner"
  style="background-image: linear-gradient(-225deg, rgba(252,74,26,0.3) 0%, rgba(247,183,51,0.3) 50%), url('https://images.unsplash.com/photo-1447279506476-3faec8071eee?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');">
   <div class="banner-content">
-    <h1>Got ricecooker?</h1>
+    <h1>Got rice cooker?</h1>
     <p id="remove-bottom-margin">Borrow cooking equipment from your neighbors</p>
      <form action="/listings" method="get" class="navbar-form">
         <div class="form-group">
@@ -57,6 +82,4 @@
 
   <hr class="featurette-divider">
 
-  <!-- This is a small js library to generate 500x500 images => remove after adding images -->
-  <script src="https://getbootstrap.com/docs/3.3/assets/js/vendor/holder.min.js"></script>
 </div>
