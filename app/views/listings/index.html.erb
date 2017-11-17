@@ -22,8 +22,8 @@
               <h2> <%= "#{listing.price} DKK / day" %> </h2>
               <p> <%=  listing.address %> </p>
             </div>
-            <div class="red-circle-helper">
-              <h2>i</h2>
+            <div>
+              <%=  cl_image_tag listing.user.facebook_picture_url, class: "cookin-avatar" %>
             </div>
           </div>
           <% end %>
