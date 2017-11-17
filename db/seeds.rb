@@ -22,7 +22,6 @@ joanna = User.create(first_name: "Joanna", last_name: "Smith", facebook_picture_
 
 # Rice cooker one
 url = "https://images-na.ssl-images-amazon.com/images/I/51SnSP8WHSL._SL1181_.jpg"
-rice_cooker_one = Listing.new(title: "OBH Rice Cooker", description: "Great OBH Nordic Rice Cooker", price: 40, address: "Ahornsgade 15, copenhagen")
 rice_cooker_one.user = john
 rice_cooker_one.photo_url = url
 rice_cooker_one.save
@@ -36,14 +35,14 @@ rice_cooker_two.save
 
 # Rice cooker three
 url = "http://www.momorice.com/wp-content/uploads/2013/11/zojirushi_ns-lac05_solo.jpg"
-rice_cooker_three = Listing.new(title: "Rice Cooker - Zojirushi ", description: "Never used Zojirushi NP-HCC10XH Rice cooker. As good as new ", price: 120, address: "Skindergade 13, copenhagen")
+rice_cooker_three = Listing.new(title: "Rice Cooker - Zojirushi ", description: "Never used Zojirushi NP-HCC10XH Rice cooker. As good as new ", price: 120, address: "Skindergade 13, Copenhagen")
 rice_cooker_three.user = bill
 rice_cooker_three.photo_url = url
 rice_cooker_three.save
 
 # BBQ grill one
 url = "https://i5.walmartimages.ca/images/Enlarge/025/303/999999-77924025303.jpg"
-bbq_grill_one = Listing.new(title: "Weber grill. Come and rent", description: "Weber 10020 Smokey Joe 14-Inch Portable Grill - used for two years, works well", price: 100, address: "Kapelvej 11, copenhagen")
+bbq_grill_one = Listing.new(title: "Weber grill. Come and rent", description: "Weber 10020 Smokey Joe 14-Inch Portable Grill - used for two years, works well", price: 100, address: "Kapelvej 11, Copenhagen")
 bbq_grill_one.user = angela
 bbq_grill_one.photo_url = url
 bbq_grill_one.save
@@ -64,28 +63,28 @@ waffle_iron.save
 
 # paella_pan
 url = "https://cdn1.everten.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/a/paella-pan-cerise.1478243907.jpg"
-paella_pan = Listing.new(title: "Castavia paella pan", description: "Complete Paella Kit for up to 13 Servings", price: 200, address: "Sankt Hans Gade 2, copenhagen")
+paella_pan = Listing.new(title: "Castavia paella pan", description: "Complete Paella Kit for up to 13 Servings", price: 200, address: "Sankt Hans Gade 2, Copenhagen")
 paella_pan.user = john
 paella_pan.photo_url = url
 paella_pan.save
 
 # wok
 url = "https://images-na.ssl-images-amazon.com/images/I/71iHEM-grhL._SL1500_.jpg"
-wok = Listing.new(title: "Wok for rent - Helen Chen's Asian Kitchen", description: "Helen Chen's Asian Kitchen Nonstick Wok Stir Fry Excalibur Pan, 12-Inch for rent - used only a couple of times", price: 50, address: "Nørre Søgade 4, copenhagen")
+wok = Listing.new(title: "Wok for rent - Helen Chen's Asian Kitchen", description: "Helen Chen's Asian Kitchen Nonstick Wok Stir Fry Excalibur Pan, 12-Inch for rent - used only a couple of times", price: 50, address: "Nørre Søgade 4, Copenhagen")
 wok.user = bill
 wok.photo_url = url
 wok.save
 
 # blender one
 url = "https://www.oster.com/on/demandware.static/-/Sites-master-catalog/default/dwd19d3338/images/highres/BLSTMB-CBG-000-1a.jpg"
-blender_one = Listing.new(title: "Top Oster Pro 1200 Blender!!", description: "Rent my blender - great for making smoothies", price: 100, address: "Sjællandsgade 16, copenhagen")
+blender_one = Listing.new(title: "Top Oster Pro 1200 Blender!!", description: "Rent my blender - great for making smoothies", price: 100, address: "Sjællandsgade 16, Copenhagen")
 blender_one.user = joanna
 blender_one.photo_url = url
 blender_one.save
 
 # blender two
 url = "https://images-na.ssl-images-amazon.com/images/I/71-Xr5c8JuL._SL1500_.jpg"
-blender_two = Listing.new(title: "Easy and simple to use basic blender", description: "Purple Hamilton Beach Personal Single Serve Blender. Basic blender that works for most tasks", price: 100, address: "Hans Kirks Vej 4, copenhagen")
+blender_two = Listing.new(title: "Easy and simple to use basic blender", description: "Purple Hamilton Beach Personal Single Serve Blender. Basic blender that works for most tasks", price: 100, address: "Hans Kirks Vej 4, Copenhagen")
 blender_two.user = angela
 blender_two.photo_url = url
 blender_two.save
